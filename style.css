@@ -1,0 +1,157 @@
+*{
+    padding: 5;
+    margin: auto;
+}
+
+body{
+    background-color: #161c2c;
+    color:white;
+    font-family: varela round;
+
+}
+
+img{
+border-radius: 10%;
+
+}
+
+p.one{
+padding-left: 10%;
+padding-right:10%;
+
+}
+.header{
+    padding-top: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.s1{
+    background-color: #7fcc5e;
+    color: black;
+    border-radius: 8px;
+
+}
+
+.description{
+    padding: 10px;
+}
+
+.icons i{
+    padding: 10px;
+    
+}
+.icons a i{
+    color: #7fcc5e;
+}
+
+.navbar{
+    margin: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: black;
+    background-color: #7fcc5e;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.name{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links{
+    height: 100%;
+}
+
+.navbar-links ul{
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+.navbar-links li a:hover{
+    display: block;
+    text-decoration: none;
+    color: #7fcc5e;
+}
+
+.navbar-links li:hover{
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    margin: .5px;
+    background-color:black;
+    border-radius: 10px;
+}
+
+
+@media (max-width:400px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+    }
+    .navbar-links ul li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+button{
+
+color: #7fcc5e
+;    background-color: #7fcc5e;
+border-radius: 5px;
+border-style: none;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
